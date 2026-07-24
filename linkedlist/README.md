@@ -1,257 +1,342 @@
+<div align="center">
+
 # 🔗 Linked List Implementations in C++
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Language-C%2B%2B-blue?style=for-the-badge&logo=cplusplus">
-  <img src="https://img.shields.io/badge/Data%20Structure-Linked%20List-success?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge">
+### *A collection of manually implemented linked list data structures and algorithms in C++*
+
+<p>
+
+<img src="https://img.shields.io/badge/C%2B%2B-17-blue?style=for-the-badge&logo=cplusplus"/>
+<img src="https://img.shields.io/badge/Data%20Structures-Linked%20Lists-success?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge"/>
+<img src="https://img.shields.io/badge/STL-Not%20Used-red?style=for-the-badge"/>
+
 </p>
 
 ---
 
-# 📖 Overview
+### 📚 Explore the Implementations
 
-This folder contains implementations of various **Linked List** data structures written completely from scratch in **C++**.
-
-The goal of these programs is to understand how linked lists work internally by manually implementing node creation, insertion, deletion, searching, sorting, reversing, and traversal without relying on STL containers.
+| 🔗 Implementation | 📖 Description |
+|:-----------------:|:--------------|
+| [📌 Singly Linked List](#-singly-linked-list) | Standard linked list with sorting, searching and recursive operations |
+| [🔄 Circular Linked List](#-circular-linked-list) | Last node points back to the head |
+| [↔️ Doubly Linked List](#️-doubly-linked-list) | Bidirectional linked list supporting forward & backward traversal |
+| [🌐 Multi Linked List](#-multi-linked-list-course--student-management-system) | Course & Student Enrollment Management System |
 
 ---
 
-# 📂 Contents
+</div>
 
-<details open>
-<summary><b>📌 Singly Linked List (linkedlist.cpp)</b></summary>
+# 🚀 Project Overview
 
-### Description
+This directory contains multiple implementations of linked lists built completely from scratch using **C++**.
 
-A complete implementation of a **Singly Linked List** supporting numerous operations through a menu-driven program.
+The objective of these implementations is to understand how linked lists work internally by manually manipulating pointers without using the Standard Template Library (STL).
 
-### Features
+---
 
-- ✅ Insert at End
+# 📊 Project Statistics
+
+| Item | Count |
+|------|------:|
+| 📂 Programs | **4** |
+| 🧩 Data Structures | **4** |
+| ⚙️ Operations Implemented | **30+** |
+| 💻 Language | **C++** |
+| 📦 STL Containers | **None** |
+
+---
+
+# 📌 Singly Linked List
+
+<details>
+<summary><b>Click to view implementation details</b></summary>
+
+## Features
+
+- ✅ Recursive Insertion
+- ✅ Iterative Insertion
 - ✅ Sorted Insertion
 - ✅ Unique Insertion
-- ✅ Search Element
-- ✅ Delete Node
-- ✅ Display List
-- ✅ Reverse List
-- ✅ Insert at Specific Position
+- ✅ Search
+- ✅ Delete
+- ✅ Reverse
 - ✅ Bubble Sort
 - ✅ Selection Sort
 - ✅ Recursive Display
-- ✅ Recursive Reverse Display (Implementation Included)
+- ✅ Insert at Specific Position
+
+---
 
 ### Concepts Covered
 
-- Dynamic Memory Allocation
-- Node Traversal
-- Pointer Manipulation
-- Sorting on Linked Lists
-- Recursive Traversal
-- Position-Based Insertion
+✔ Dynamic Memory Allocation
+
+✔ Pointer Manipulation
+
+✔ Node Traversal
+
+✔ Recursive Functions
+
+✔ Sorting on Linked Lists
+
+✔ Position Based Insertion
+
+---
+
+### Core Operations
+
+```cpp
+insert()
+search()
+delete()
+reverse()
+bubbleSort()
+selectionSort()
+recursiveDisplay()
+```
 
 </details>
 
 ---
 
+# 🔄 Circular Linked List
+
 <details>
-<summary><b>🔄 Circular Linked List (circular.cpp)</b></summary>
+<summary><b>Click to view implementation details</b></summary>
 
-### Description
+## Features
 
-Implementation of a **Circular Singly Linked List** where the last node points back to the head node.
-
-### Features
-
-- ✅ Insert Node
-- ✅ Search Value
-- ✅ Delete Node
+- ✅ Circular Node Linking
+- ✅ Insert
+- ✅ Search
+- ✅ Delete
 - ✅ Circular Traversal
 
+---
+
 ### Concepts Covered
 
-- Circular Node Linking
-- Head Pointer Updates
-- Deletion Cases
-- Single Node Handling
-- Continuous Traversal
+✔ Last node pointing to Head
+
+✔ Circular Traversal
+
+✔ Head Deletion
+
+✔ Single Node Case
+
+✔ Pointer Updating
+
+---
+
+### Core Operations
+
+```cpp
+insert()
+search()
+delete()
+display()
+```
 
 </details>
 
 ---
 
+# ↔️ Doubly Linked List
+
 <details>
-<summary><b>↔️ Doubly Linked List (doubley.cpp)</b></summary>
+<summary><b>Click to view implementation details</b></summary>
 
-### Description
+## Features
 
-Implementation of a **Doubly Linked List** using both previous and next pointers.
-
-### Features
-
-- ✅ Insert Node
 - ✅ Forward Traversal
 - ✅ Backward Traversal
-- ✅ Delete Node
-- ✅ Search Element
-- ✅ Reverse List
-- ✅ Find Minimum Value
-- ✅ Find Maximum Value
-- ✅ Quick Sort on Doubly Linked List
+- ✅ Search
+- ✅ Delete
+- ✅ Reverse
+- ✅ Find Minimum
+- ✅ Find Maximum
+- ✅ Quick Sort
+
+---
 
 ### Concepts Covered
 
-- Bidirectional Traversal
-- Previous Pointer Management
-- Quick Sort Partitioning
-- Tail Pointer Usage
-- Efficient Reverse Traversal
+✔ Previous Pointer
+
+✔ Bidirectional Traversal
+
+✔ Tail Pointer
+
+✔ Quick Sort on Linked List
+
+✔ Reverse Traversal
+
+---
+
+### Core Operations
+
+```cpp
+insert()
+search()
+delete()
+reverse()
+quickSort()
+findMin()
+findMax()
+```
 
 </details>
 
 ---
 
-<details>
-<summary><b>🌐 Multi Linked List (multilinkedlist.cpp)</b></summary>
+# 🌐 Multi Linked List (Course & Student Management System)
 
-### Description
+<details open>
+<summary><b>Click to view complete implementation</b></summary>
 
-Demonstrates the implementation of a **Multi Linked List**, where nodes may contain multiple links depending upon the application's requirements.
+## 📖 Description
 
-### Concepts Covered
+This project implements a **Multi Linked List** to simulate a **Course Enrollment Management System**.
 
-- Multiple References
-- Advanced Pointer Handling
-- Custom Linked Structure Design
+Each **Course Node** maintains a pointer to another linked list containing the students enrolled in that course.
 
-</details>
+Instead of storing everything in a single list, the program creates a **Linked List of Linked Lists**, making it a practical example of a multi-linked structure.
 
 ---
 
-<details>
-<summary><b>🚀 Driver Program (main.cpp)</b></summary>
+## 🏗 Structure
 
-### Description
+```
+Course List
 
-Acts as the menu-driven interface for testing different linked list operations interactively.
-
-### Purpose
-
-- Execute operations
-- Test functionality
-- Verify correctness
-- Practice linked list manipulation
-
-</details>
-
----
-
-# 🧠 Algorithms Used
-
-| Algorithm | Status |
-|-----------|--------|
-| Bubble Sort | ✅ |
-| Selection Sort | ✅ |
-| Quick Sort (DLL) | ✅ |
-| Recursive Traversal | ✅ |
-| Reverse Linked List | ✅ |
-| Sorted Insertion | ✅ |
-| Unique Insertion | ✅ |
-
----
-
-# 🎯 Learning Objectives
-
-This project demonstrates:
-
-- Dynamic Memory Allocation
-- Pointer Manipulation
-- Recursive Programming
-- Sorting on Linked Lists
-- Searching Techniques
-- Deletion Cases
-- Position Based Insertion
-- Circular Structures
-- Doubly Linked Structures
-- Advanced Node Traversal
-
----
-
-# 🛠 Technologies
-
-- C++
-- Dynamic Memory Allocation
-- Pointers
-- Structures
-- Console Application
-
----
-
-# 📁 Folder Structure
-
-```text
-linkedlist/
-│
-├── linkedlist.cpp
-├── circular.cpp
-├── doubley.cpp
-├── multilinkedlist.cpp
-├── main.cpp
-└── README.md
+CS101 ─────────────► CS102 ─────────────► CS103
+  │                    │                    │
+  ▼                    ▼                    ▼
+S1 → S2 → S3        S4 → S5          S6 → S7 → S8
 ```
 
 ---
 
-# 💡 Highlights
+## Node Design
 
-✔ Menu Driven Programs
+### Course Node
 
-✔ Manual Memory Management
+```cpp
+struct C_node
+{
+    string course_no;
+    C_node* next;
+    S_node* student_list;
+};
+```
 
-✔ No STL Containers
+### Student Node
 
-✔ Multiple Linked List Variants
-
-✔ Recursive Implementations
-
-✔ Sorting Algorithms on Linked Lists
-
-✔ Pointer-Based Data Structure Implementation
+```cpp
+struct S_node
+{
+    string seat_no;
+    S_node* next;
+};
+```
 
 ---
 
-# 📚 Topics Covered
+## Implemented Operations
 
-- Singly Linked List
-- Circular Linked List
-- Doubly Linked List
-- Searching
-- Sorting
-- Reversing
-- Traversal
+### 📘 Course Management
+
+- ✅ Add Course
+- ✅ Delete Course
+- ✅ Search Course
+- ✅ Display Courses
+
+---
+
+### 👨‍🎓 Student Management
+
+- ✅ Enroll Student
+- ✅ Remove Student from One Course
+- ✅ Remove Student from Every Course
+- ✅ Search Student in Specific Course
+- ✅ Search Student Across All Courses
+- ✅ Display Students of a Course
+
+---
+
+### 📊 Display Functions
+
+- ✅ Display Every Course
+- ✅ Display Students of Selected Course
+- ✅ Display Complete Enrollment Record
+
+---
+
+## Highlights
+
+✔ Duplicate Course Detection
+
+✔ Duplicate Student Detection
+
+✔ Dynamic Student Lists
+
+✔ Automatic Memory Cleanup
+
+✔ Nested Linked Lists
+
+✔ Practical University Enrollment Simulation
+
+---
+
+### Example
+
+```
+CS101 :
+23K-1234
+23K-1001
+23K-1111
+
+CS102 :
+23K-1015
+23K-1077
+```
+
+Each course owns its own linked list of enrolled students.
+
+</details>
+
+---
+
+# 📚 Skills Demonstrated
+
 - Dynamic Memory Allocation
-- Node Deletion
-- Position Insertion
-- Recursive Functions
-- Quick Sort on Linked List
+- Linked List Traversal
+- Nested Linked Lists
+- Pointer Manipulation
+- Recursive Programming
+- Sorting Algorithms
+- Searching Algorithms
+- Memory Management
+- Data Organization
 
 ---
 
-# 🚀 Future Improvements
+# ⭐ Repository Highlights
 
-- Merge Sort for Linked List
-- Merge Two Sorted Lists
-- Detect Loop (Floyd's Cycle Detection)
-- Remove Loop
-- Reverse in Groups
-- Polynomial Representation
-- Sparse Matrix using Linked List
-- LRU Cache using Linked List
-- Generic (Template) Linked List
+- 💯 Built completely from scratch
+- 🚫 No STL containers used
+- 📖 Menu-driven implementations
+- 🧠 Educational and beginner-friendly
+- ⚡ Focused on understanding pointers and memory management
 
 ---
 
-<p align="center">
+<div align="center">
 
-### ⭐ If you found this project helpful, consider giving the repository a star!
+### ⭐ If you found these implementations helpful, consider starring the repository!
 
-</p>
+**Happy Coding! 🚀**
+
+</div>
